@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="memo.css">
+
+<body>
+  <div class="contenedor contenedor-puntos">
+    <a href="../home.html">HOME MEMO</a>
+    <div class="contenedor-time">
+      <h4>Tiempo</h4>
+      <h1 id="tiempo">00:30</h1>
+    </div>
+    <div class="contenedor-pounts">
+      <h4>Puntos</h4>
+      <h1 id="punto">00</h1>
+    </div>
+    <button class="btn-end" id="terminar" onClick="terminar()">
+      FINALIZAR PARTIDA
+    </button>
+    <button class="btn-start" id="iniciar" onClick="iniciar()">
+      INICIAR PARTIDA
+    </button>
+  </div>
+  <div class="contenedor contenedor-juego" id="contenedor"></div>
+
+  <div id="modal" class="modalContainer">
+    <div class="modal-content">
+      <h1 id="mensaje"></h1>
+      <img id="img-resultado" />
+      <div class="card-puntos">
+        <div class="card-punto">00</div>
+        <div class="card-punto">00</div>
+        <div class="card-punto">00</div>
+        <div class="card-punto">00</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="memo.js"></script>
+</body>

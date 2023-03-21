@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  @font-face {
+    font-family: Futured;
+    src: url("../fonts/Futured.TTF");
+  }
+  
+  @keyframes vibrar {
+      0% {
+          transform: translate(0);
+      }
+  
+      20% {
+          transform: translate(-2px, 2px);
+      }
+  
+      40% {
+          transform: translate(-2px, -2px);
+      }
+  
+      60% {
+          transform: translate(2px, 2px);
+      }
+  
+      80% {
+          transform: translate(2px, -2px);
+      }
+  
+      100% {
+          transform: translate(0);
+      }
+  }
+  
+  @keyframes sacudida {
+      0%,
+      100% {
+          transform: translateX(0%);
+          transform-origin: 50% 50%;
+      }
+  
+      15% {
+          transform: translateX(-30px) rotate(-6deg);
+      }
+  
+      30% {
+          transform: translateX(15px) rotate(6deg);
+      }
+  
+      45% {
+          transform: translateX(-15px) rotate(-3.6deg);
+      }
+  
+      60% {
+          transform: translateX(9px) rotate(2.4deg);
+      }
+  
+      75% {
+          transform: translateX(-6px) rotate(-1.2deg);
+      }
+  }
+  
+  body {
+    height: 100vh;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      font-family: Futured;
+  }
+  
+  .fondo{
+    height: 80vh;
+    animation: vibrar 1s ease-in-out infinite;
+  }
+  
+  .titulo{
+    display: flex;
+  }
+  
+  .titulo h1{
+    margin: 5px;
+    font-size: 40px;
+    animation: sacudida 3s ease-in-out infinite;
+  }
+  
+  .titulo h1:nth-child(1){
+    color: #FBBD0D;
+  }
+  .titulo h1:nth-child(2){
+    color: #2D2C2E;
+  }
+  .titulo h1:nth-child(3){
+    color: #FD1F4A;
+  }
+  .titulo h1:nth-child(4){
+    color: #FBBD0D;
+  }
+  .titulo h1:nth-child(5){
+    color: #2D2C2E;
+  }
+  .titulo h1:nth-child(6){
+    color: #FD1F4A;
+  }
+  .titulo h1:nth-child(7){
+    color: #FBBD0D;
+  }
+  .titulo h1:nth-child(8){
+    color: #2D2C2E;
+  }
+  
+  .botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn{
+    cursor: pointer;
+    margin: 20px 10px;
+    border-radius: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 20px 30px;
+    color: white;
+    transition: .5s ease-in-out;
+  }
+  
+  .btn-newgame{
+    background-color: #FD1F4A;
+  }
+  
+  .btn-puntos{
+    background-color: #3E503C;
+  }
+  
+  .btn-salir{
+    background-color: #2D2C2E;
+  }
+  
+  .btn-newgame:hover{
+    
+    box-shadow:  4px 4px 0px #9f112d,
+    -4px -4px 0px #ffffff;
+  }
+  
+  .btn-puntos:hover{
+    box-shadow:  4px 4px 0px #212a20,
+    -4px -4px 0px #ffffff;
+  }
+  
+  .btn-salir:hover{
+    box-shadow:  4px 4px 0px #202020,
+    -4px -4px 0px #ffffff;
+  } 
+  

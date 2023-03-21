@@ -1,0 +1,28 @@
+{
+  "name": "memorama",
+  "version": "1.0.0",
+  "description": "Juego de memoria",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jduchman/Memorama.git"
+  },
+  "keywords": [
+    "game",
+    "memorama",
+    "escritorio"
+  ],
+  "author": "JDUCHMAN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jduchman/Memorama/issues"
+  },
+  "homepage": "https://github.com/Jduchman/Memorama#readme",
+  "devDependencies": {
+    "electron": "^23.1.4",
+    "electron-reload": "^2.0.0-alpha.1"
+  }
+}
