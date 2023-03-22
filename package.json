@@ -4,7 +4,8 @@
   "description": "Juego de memoria",
   "main": "src/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dist": "electron-builder"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,6 @@
   "homepage": "https://github.com/Jduchman/Memorama#readme",
   "devDependencies": {
     "electron": "^23.1.4",
-    "electron-reload": "^2.0.0-alpha.1"
+    "electron-builder": "^23.6.0"
   }
 }
